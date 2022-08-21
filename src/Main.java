@@ -7,16 +7,36 @@ public class Main {
     public static void main(String[] args) {
 
         Gryffindor harry = ganerateGryffindor("Гарри Поттер");
+        Gryffindor germiona = ganerateGryffindor("Гермиона Грейнджер");
         Gryffindor ron = ganerateGryffindor("Рон Уизли");
-        Ravenclaw luna = ganerateRavenclaw("Полумна Лавгуд");
+
+        Ravenclaw jou = ganerateRavenclaw("Чжоу Чанг");
+        Ravenclaw padma = ganerateRavenclaw("Падма Патил");
+        Ravenclaw marcus = ganerateRavenclaw("Маркус Белби");
+
         Slytherin draco = ganerateSlytherin("Драко Малфой");
+        Slytherin grehem = ganerateSlytherin("Грэхэм Монтегю");
+        Slytherin gregory = ganerateSlytherin("Грегори Гойл");
+
         Hufflepuff cedric = ganerateHufflepuff("Седрик Диггори");
+        Hufflepuff zaharia = ganerateHufflepuff("Захария Смит");
+        Hufflepuff jastin = ganerateHufflepuff("Джастин Финч-Флетчли");
 
         harry.print();
+        germiona.print();
         ron.print();
-        luna.print();
+
+        jou.print();
+        padma.print();
+        marcus.print();
+
         draco.print();
+        grehem.print();
+        gregory.print();
+
         cedric.print();
+        zaharia.print();
+        jastin.print();
 
         harry.compereHogvarts(draco);
         harry.compereGryffindor(ron);
