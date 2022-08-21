@@ -34,8 +34,8 @@ public class Hufflepuff extends Hogwarts{
         this.honest = honest;
     }
     public void compereHufflepuff(Hufflepuff hufflepuff) {
-        int ability1 = ability();
-        int ability2 = hufflepuff.ability();
+        int ability1 = getAbility();
+        int ability2 = hufflepuff.getAbility();
         if (ability1 > ability2) {
             System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", getName(), hufflepuff.getName(), ability1, ability2);
         } else if (ability2 > ability1) {
@@ -44,7 +44,7 @@ public class Hufflepuff extends Hogwarts{
             System.out.printf("Студент %s такой же, как студент %s: %d VS %d%n", hufflepuff.getName(),getName(), ability1, ability2);
         }
     }
-    private int ability() {
+    private int getAbility() {
         return hardworking + loyal+honest;
     }
     public String toString() {

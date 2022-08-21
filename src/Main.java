@@ -38,8 +38,9 @@ public class Main {
         zaharia.print();
         jastin.print();
 
-        harry.compereHogvarts(draco);
+        harry.compereHogwarts(draco);
         harry.compereGryffindor(ron);
+
 
     }
 

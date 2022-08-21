@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Gryffindor extends Hogwarts{
 
     private int nobility;
@@ -35,8 +37,8 @@ public class Gryffindor extends Hogwarts{
         this.bravery = bravery;
     }
     public void compereGryffindor(Gryffindor gryffindor) {
-        int ability1 = ability();
-        int ability2 = gryffindor.ability();
+        int ability1 = getAbility();
+        int ability2 = gryffindor.getAbility();
         if (ability1 > ability2) {
             System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", getName(), gryffindor.getName(), ability1, ability2);
         } else if (ability2 > ability1) {
@@ -45,11 +47,12 @@ public class Gryffindor extends Hogwarts{
             System.out.printf("Студент %s такой же, как студент %s: %d VS %d%n", gryffindor.getName(),getName(), ability1, ability2);
         }
     }
-    private int ability() {
+    private int getAbility() {
         return nobility + honor+bravery;
     }
     public String toString() {
         return String.format("%s; благородство: %d; честь: %d; храбрость: %d ",super.toString(), nobility, honor, bravery);
     }
+
 }
 

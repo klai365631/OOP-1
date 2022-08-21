@@ -45,8 +45,8 @@ public class Ravenclaw extends Hogwarts{
         this.fullOfCreativity = fullOfCreativity;
     }
     public void compereRavenclaw(Ravenclaw ravenclaw) {
-        int ability1 = ability();
-        int ability2 = ravenclaw.ability();
+        int ability1 = getAbility();
+        int ability2 = ravenclaw.getAbility();
         if (ability1 > ability2) {
             System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", getName(), ravenclaw.getName(), ability1, ability2);
         } else if (ability2 > ability1) {
@@ -55,7 +55,7 @@ public class Ravenclaw extends Hogwarts{
             System.out.printf("Студент %s такой же, как студент %s: %d VS %d%n", ravenclaw.getName(),getName(), ability1, ability2);
         }
     }
-    private int ability() {
+    private int getAbility() {
         return smart + wise+witty+fullOfCreativity;
     }
     public String toString() {

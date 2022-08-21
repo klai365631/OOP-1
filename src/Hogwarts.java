@@ -36,7 +36,7 @@ public class Hogwarts {
         this.theDistanceOfTheTransgression = theDistanceOfTheTransgression;
     }
 
-    private int ability() {
+    private int getAbility() {
         return magic + theDistanceOfTheTransgression;
     }
 
@@ -44,9 +44,9 @@ public class Hogwarts {
         System.out.println(this);
     }
 
-    public void compereHogvarts(Hogwarts hogwarts) {
-        int ability1 = ability();
-        int ability2 = hogwarts.ability();
+    public void compereHogwarts(Hogwarts hogwarts) {
+        int ability1 = getAbility();
+        int ability2 = hogwarts.getAbility();
         if (ability1 > ability2) {
             System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", getName(), hogwarts.getName(), ability1, ability2);
         } else if (ability2 > ability1) {
